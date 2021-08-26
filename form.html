@@ -14,17 +14,17 @@
       </tr>
       <tr>
         <td><label for="fname">First Name:</label></td>
-        <td colspan="3"><input type="text" name="fname" id="fname" value=""></td>
+        <td colspan="3"><input type="text" name="fname" id="fname" value="" placeholder="Enter First Name" autofocus></td>
       </tr>
       <tr>
         <td><label for="lname">Last Name:</label></td>
-        <td colspan="3"><input type="text" name="lname" id="lname" value=""></td>
+        <td colspan="3"><input type="text" name="lname" id="lname" value="" placeholder="Enter Last Name"></td>
       </tr>
       <tr>
         <td><label>Date of Birth:</label></td>
         <td>
           <select class="" name="month">
-            <option value="" hidden>Month</option>
+            <option value="" selected disabled hidden>Month</option>
             <option value="january">January</option>
             <option value="february">February</option>
             <option value="march">March</option>
@@ -41,7 +41,7 @@
         </td>
         <td>
           <select class="" name="day">
-            <option value="" hidden>Day</option>
+            <option value="" selected disabled hidden>Day</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -76,7 +76,7 @@
           </select>
         </td>
         <td><select class="" name="year">
-            <option value="" hidden>Year</option>
+            <option value="" selected disabled hidden>Year</option>
             <option value="2000">2000</option>
             <option value="2001">2001</option>
             <option value="2002">2002</option>
@@ -96,29 +96,34 @@
         </td>
       </tr>
       <tr>
+        <td colspan="">
+          <br>
+        </td>
+      </tr>
+      <tr>
         <th colspan="4">Account Information</th>
       </tr>
       <tr>
         <td><label for="email">Email:</label></td>
-        <td colspan="3"><input type="email" name="email" id="email"></td>
+        <td colspan="3"><input type="email" name="email" id="email" placeholder="Enter Email ID" required></td>
       </tr>
       <tr>
         <td><label for="cemail">Confirm Email:</label></td>
-        <td colspan="3"><input type="email" name="cemail" id="cemail"></td>
+        <td colspan="3"><input type="email" name="cemail" id="cemail" placeholder="Confirm Email ID"></td>
       </tr>
       <tr>
         <td><label for="password">Password:</label></td>
-        <td colspan="3"><input type="password" name="password" id="password"></td>
+        <td colspan="3"><input type="password" name="password" id="password" placeholder="Enter Password"></td>
       </tr>
       <tr>
         <td><label for="cpassword">Confirm Password:</label></td>
-        <td colspan="3"><input type="password" name="cpassword" id="cpassword"></td>
+        <td colspan="3"><input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password"></td>
       </tr>
       <tr>
         <td><label for="secques">Security Question</label></td>
         <td colspan="3">
           <select class="" name="secques" id="secques">
-            <option value="" hidden>Select One</option>
+            <option value="" selected disabled hidden>Select One</option>
             <option value="hometown">Your Hometown?</option>
             <option value="mothertongue">Your Mother Tongue?</option>
           </select>
@@ -127,7 +132,12 @@
       <tr>
         <td><label for="secans">Security Answer</label></td>
         <td colspan="3">
-          <input type="text" name="secans" value="" id="secans">
+          <input type="text" name="secans" value="" id="secans" placeholder="Enter Answer">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="">
+          <br>
         </td>
       </tr>
       <tr>
@@ -135,20 +145,20 @@
       </tr>
       <tr>
         <td><label for="address">Address:</label></td>
-        <td colspan="3"><input id="address" name="address"></td>
+        <td colspan="3"><input id="address" name="address" placeholder="Enter Address"></td>
       </tr>
       <tr>
         <td><label for="city">City:</label></td>
-        <td colspan="3"><input id="city" name="city"></td>
+        <td colspan="3"><input id="city" name="city" placeholder="Enter City" value="Ahmedabad" readonly></td>
       </tr>
 
       <tr>
         <td><label for="state">State:</label></td>
         <td colspan="3">
           <select name="state" id="state">
-            <option value="" hidden>Select State</option>
+            <option value="" disabled hidden>Select State</option>
             <option value="mp">Madhya Pradesh</option>
-            <option value="gj">Gujrat</option>
+            <option value="gj" selected>Gujrat</option>
             <option value="mh">Maharashtra</option>
             <option value="up">Uttar Pradesh</option>
             <option value="rj">Rajasthan</option>
@@ -157,11 +167,11 @@
       </tr>
       <tr>
         <td><label for="zipcode">Zip Code:</label></td>
-        <td colspan="2"><input id="zipcode" name="zipcode"></td>
+        <td colspan="2"><input id="zipcode" name="zipcode" placeholder="Enter Zip code" disabled></td>
       </tr>
       <tr>
         <td><label for="phone">Phone:</label></td>
-        <td colspan="2"><input id="phone" name="phone"></td>
+        <td colspan="2"><input id="phone" name="phone" placeholder="Enter Phone No."></td>
         <td>
           <select class="" name="phonetype">
             <option value="mobile">Mobile</option>
@@ -170,9 +180,14 @@
         </td>
       </tr>
       <tr>
-        <td colspan="4">
-          <input type="submit" name="" value="Submit">
+        <td colspan="">
+          <br>
         </td>
+      </tr>
+      <tr>
+        <th colspan="4">
+          <input type="submit" name="" value="Submit">
+        </th>
       </tr>
     </form>
   </table>
